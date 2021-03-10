@@ -1,0 +1,15 @@
+#include stdio.h
+
+int main()
+{
+  int a
+
+  printf("Oie! Este eh o primeiro programa em C.\n");
+  printf("Digite um numero: ");
+
+  scanf("%i", &a);
+
+  printf("O valor digitado foi ", &a);
+
+  return 0;
+}
