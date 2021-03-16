@@ -113,9 +113,9 @@ int main()
   float v1, v2, v3, s, p;
   printf("Informe a primeira variável: ");
   scanf("%f", &v1);
-  printf("Informe a primeira variável: ");
+  printf("Informe a segunda variável: ");
   scanf("%f", &v2);
-  printf("Informe a primeira variável: ");
+  printf("Informe a terceira variável: ");
   scanf("%f", &v3);
   s = v1 + v2;
   p = v2 * v3;
