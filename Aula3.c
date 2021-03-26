@@ -271,45 +271,82 @@ int main()
 int main()
 {
 
-  int va1, va2, vl1, vl2;
-  printf("O primeiro valor: ");
-  scanf("%i", &v1);
-  printf("O segundo valor: ");
-  scanf("%i", &v2);
-  if (v1 % v2 == 1)
+  int va1, va2, vl11, vl12, vl21, vl22;
+
+  printf("O primeiro valor da Primeira variavel: ");
+  scanf("%i", &vl11);
+  printf("O segundo valor da Primeira variavel: ");
+  scanf("%i", &vl12);
+  printf("O primeiro valor da Segunda variavel: ");
+  scanf("%i", &vl21);
+  printf("O segundo valor da Segunda variavel: ");
+  scanf("%i", &vl22);
+
+  va1 = vl11 + vl12;
+  va2 = vl21 + vl22;
+
+  if (va1 % va2 == 1)
   {
-    printf("%i", v1 + v2 + 1);
+    printf("%i", va1 + va2 + 1);
   }
-  else if (v1 % v2 == 2)
+  else if (va1 % va2 == 2)
   {
-    if (v1 % 2 == 0)
+    if (vl11 % 2 == 0)
     {
-      printf("A primeira variavel eh par!\n");
+      printf("O primeiro valor da Primeira variavel eh par!");
     }
     else
     {
-      printf("A primeira variavel eh impar!\n");
+      printf("O primeiro valor da Primeira variavel eh impar!");
     }
-    if (v2 % 2 == 0)
+    if (vl12 % 2 == 0)
     {
-      printf("A segunda variavel eh par!\n");
+      printf("O segundo valor da Primeira variavel eh par!");
     }
     else
     {
-      printf("A segunda variavel eh impar!\n");
+      printf("O segundo valor da Primeira variavel eh impar!");
+    }
+    if (vl21 % 2 == 0)
+    {
+      printf("O primeiro valor da Segunda variavel eh par!");
+    }
+    else
+    {
+      printf("O primeiro valor da Segunda variavel eh impar!");
+    }
+    if (vl22 % 2 == 0)
+    {
+      printf("O segundo valor da Segunda variavel eh par!");
+    }
+    else
+    {
+      printf("O segundo valor da egunda variavel eh impar!");
     }
   }
-  else if (v1 % v2 == 3)
+  else if (va1 % va2 == 3)
   {
-    printf("%i", v1 * 3);
+    printf("%i", (vl11 + vl12 + vl21 + vl22) * vl11);
   }
-  else if (v1 % v2 == 3)
+  else if (va1 % va2 == 4)
   {
-    printf("%i", v1 * 3);
+    if (vl12 != 0)
+    {
+      printf("%i", (vl11 + vl12 + vl21 + vl22) / vl12);
+    }
   }
   else
   {
-    printf("O voto eh obrigatorio!");
+    printf("%i %i", va1 * va1, va2 * va2);
   }
   return 0;
 }
+
+// 7. Existem números de 4 dígitos (entre 1000 e 9999) que obedecem à seguinte característica: se
+// dividirmos o número em dois números de dois dígitos, um composto pela dezena e pela
+// unidade, e outro pelo milhar e pela centena, se somarmos estes dois novos números gerando
+// um terceiro, o quadrado deste terceiro número é exatamente o número original de quatro
+// dígitos. Por exemplo:
+// 2025 -> dividindo: 20 e 25 -> somando 20 e 25 tem-se 45  452= 2025.
+// Escreva um programa para ler um número e verificar se ele obedece a esta característica.
+
